@@ -1,0 +1,83 @@
+#game-search-main {
+    margin: 0 auto;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .search-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 56px;
+        margin-top: 1em;
+        position: relative;
+
+        button {
+            height: 100%;
+            margin-left: 5px;
+        }
+
+        mat-form-field {
+            height: 100%;
+            width: 50%;
+        }
+    }
+
+    .selectForm {
+        margin-left: 2vw;
+        display: block;
+    }
+
+    .searched-games {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        width: fit-content;
+        .searched-games-results {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+    }
+
+    .game-card {
+        width: 133px;
+        height: 250px;
+        font-size: 0.75em;
+        display: flex;
+        flex-direction: column;
+        margin: 16px 8px;
+        cursor: pointer;
+
+        img {
+            aspect-ratio: 1/1;
+            max-height: 100px;
+            margin: auto;
+        }
+    }
+
+    .card-title-container {
+        display: flex;
+        align-items: center;
+        padding: 4px;
+
+        mat-card-title {
+            font-size: 1em;
+            line-height: normal;
+        }
+    }
+
+    mat-card-content {
+        font-size: 0.75em;
+        padding: 4px;
+        line-height: normal;
+    }
+
+    mat-card-actions {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        // button {
+        // }
+    }
+}
